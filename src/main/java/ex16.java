@@ -11,10 +11,9 @@ public class ex16 {
 
         System.out.print("What is your age? ");
         int age = inScan.nextInt();
-        if (age >= 16){
-            System.out.println("You are old enough to legally drive.");
-            return;
-        }
-        System.out.println("You are not old enough to legally drive.");
+        String answer = (age >= 16)? "You are old enough to legally drive." :
+                "You are not old enough to legally drive.";
+
+        System.out.println(answer);
     }
 }
